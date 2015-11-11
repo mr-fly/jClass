@@ -1,0 +1,14 @@
+{
+  "name": "jclass",
+  "version": "1.0.0",
+  "main": "jclass.js",
+  "ignore": [
+    ".gitignore",
+    "CHANGELOG.txt",
+    "package.json",
+    "README.md",
+    "Gruntfile.js",
+    "dist",
+    "samples"
+  ]
+}

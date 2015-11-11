@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jClass</title>
+    <script src="jclass.js"></script>
+</head>
+<body>
+
+<script>
+    var Class1 = Class({
+        constructor: function (a, b) {
+
+        }
+    });
+
+    var Class2 = Class1.extend({
+        constructor: function (a, b) {
+            this.super('constructor', a, b);
+        }
+    });
+
+    /*
+    var Class2 = Class(Class1, {
+        constructor: function (a, b) {
+            this.super('constructor', a, b);
+        }
+    });
+
+    var Class2 = Class([Class1], {
+        constructor: function (a, b) {
+            this.super('constructor', a, b);
+        }
+    });
+    */
+
+    var Class3 = Class2.extend({
+        constructor: function (a, b) {
+            this.super('constructor', a, b);
+        }
+    });
+
+    console.log(Class1, Class2, Class3);
+
+    // ---
+
+    var class1 = new Class1();
+    var class2 = new Class2();
+    var class3 = new Class3();
+
+    console.log(class1, class2, class3);
+
+</script>
+
+</body>
+</html>
